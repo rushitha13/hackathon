@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+function validation()
+{
+ var x=document.getElementById("stock").value;
+var y=document.getElementById("stock").value;
+if(x=="Limit"|| y=="limit")
+{
+document.getElementById(t1).value;
+document.getElementById(t2).value;
+}
+else{
+document.getElementById(t2).value;
+}
+}
+</script>
+</head>
+<body>
+<form>
+<h1 style="color:red; fontsize:50">Book Order<h1>
+<h5 style="color:red">Search Stock</h5>
+<select >
+<option>dbs</option>
+<option>others</option>
+</select><br>
+<h5 style="color:red">Order Type</h5>
+<select  id="stock" Onclick="validation()">
+<option value="limit">Limit</option>
+<option value="market">Market</option>
+</select><br>
+<h5 style="color:red">Price</h5>
+<input type="text"  name="t1"><br>
+<h5 style="color:red">Quantity:</h5>
+<input type="text" name ="t2"><br><br>
+<input type= "submit"  value="Place Order"><br>
+</form>
+</body>
+</html>
